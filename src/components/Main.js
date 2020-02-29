@@ -130,7 +130,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <p>You can get in contact with me either through <a href="mailto:oliverbains&#64;gmx&#46;de?Subject=Website%20request"> email </a>
+          <p>You can get in contact with me either through <a href="mailto:oliverbains&#64;gmx&#x2E;de?Subject=Website%20request"> email </a>
           or through the below icons.
           </p>
           <ul className="icons">
