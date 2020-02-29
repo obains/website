@@ -115,6 +115,10 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic06} alt="" />
           </span>
+          <h3>This website</h3>
+          <p>
+            This website was created using Gatsby.JS.
+          </p>
           {close}
         </article>
 
