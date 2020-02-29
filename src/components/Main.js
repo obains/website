@@ -78,7 +78,6 @@ class Main extends React.Component {
             <br></br>
             <br></br>
             At home, I continue my journey to learn by using data driven approaches to solve (sometimes silly) questions or issues.
-            Check them out <a href="#work">here</a>
             </p>
           {close}
         </article>
