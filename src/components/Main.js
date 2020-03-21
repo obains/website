@@ -1,9 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/profile.jpg'
-import pic04 from '../images/Density.png'
 import pic05 from '../images/munichmap.png'
 import pic06 from '../images/bestchoices.png'
 import pic07 from '../images/sentimentanalysis.png'
@@ -128,8 +126,6 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic08} alt="" />
           </span>
-
-
           <h3>Munich: where to stay?</h3>
           <p>Topics: Data Cleaning, Data Analysis, Cartological Visualisation</p>
           <span className="image main">
