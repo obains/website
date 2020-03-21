@@ -6,6 +6,8 @@ import pic03 from '../images/profile.jpg'
 import pic04 from '../images/Density.png'
 import pic05 from '../images/munichmap.png'
 import pic06 from '../images/bestchoices.png'
+import pic07 from '../images/sentimentanalysis.png'
+import pic08 from '../images/binnedcertainty.png'
 
 class Main extends React.Component {
   render() {
@@ -90,7 +92,46 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Projects</h2>
+
+          <h3>Sentiment Analysis: Liverpool Football Club and Adriàn</h3>
+          <p>Topics: Machine Learning, Naive Bayes, Web Scraping, Data Cleaning, Data Analysis, Graphical Visualisation</p>
+          <span className="image main">
+            <img src={pic07} alt="" />
+          </span>
+          <p>
+            I'm a big football fan, having followed Liverpool Football Club since I was a young boy. I have also worked for an Operations Company doing Digital Advertising 
+            at Champions League matches and I know the magic that goes on there. As such, I try to watch every Champions League match of Liverpool which I can.
+            <br></br>
+            <br></br>
+            Unfortunately the latest tie in March 2020 was against Athletico Madrid, where our goalkeeper made a big mistake in extra-time, which ultimately cost us the game.
+            At first, I too was angry at the goalie, Adriàn, but this quickly gave way.
+            I was interested to see how other fans perceived the incident and how or if this changed over time.
+            <br></br>
+            <br></br>
+            As such, I scraped twitter to collect information, which I could use to analyse sentiment towards Adriàn through the medium of tweets.
+            <br></br>
+            <br></br>
+            As expected, there was a large amount of negative sentiment towards him after the mistake. 
+            Interestingly, there was also a lot of negative sentiment even before the incident occurred.
+          </p>
+          <p> 
+          Check out the full code and analysis by clicking the below button:
+          <br></br><br></br>
+          <ul className="iconsinline">
+            <li>
+              <a href="https://github.com/obains/sentiment-analysis-adrian/blob/master/sentiment-analysis/sentiment_analysis_adrian.ipynb" className="icon fa-github">
+                <span className="label">Github</span>
+              </a>
+            </li>
+          </ul>
+          </p>
+          <span className="image main">
+            <img src={pic08} alt="" />
+          </span>
+
+
           <h3>Munich: where to stay?</h3>
+          <p>Topics: Data Cleaning, Data Analysis, Cartological Visualisation</p>
           <span className="image main">
             <img src={pic05} alt="" />
           </span>
