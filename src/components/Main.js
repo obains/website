@@ -2,10 +2,11 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
 import pic03 from '../images/profile.jpg'
-import pic04 from '../images/munichmap.png'
 import pic06 from '../images/bestchoices.png'
 import pic07 from '../images/sentimentanalysis.png'
 import pic08 from '../images/binnedcertainty.png'
+import pic09 from '../images/munichmap.png'
+
 
 class Main extends React.Component {
   render() {
@@ -112,6 +113,9 @@ class Main extends React.Component {
             As expected, there was a large amount of negative sentiment towards him after the mistake. 
             Interestingly, there was also a lot of negative sentiment even before the incident occurred.
           </p>
+          <span className="image main">
+            <img src={pic08} alt="" />
+          </span>
           <p> 
           Check out the full code and analysis by clicking the below button:
           <br></br><br></br>
@@ -123,14 +127,11 @@ class Main extends React.Component {
             </li>
           </ul>
           </p>
-          <span className="image main">
-            <img src={pic08} alt="" />
-          </span>
           <h3>Munich: where to stay?</h3>
           <p>Topics: Data Cleaning, Data Analysis, Cartological Visualisation</p>
-          <span className="image main">
-            <img src={pic04} alt="" />
-          </span>
+            <span className="image main">
+              <img src={pic09} alt="" />
+            </span>
           <p>
             I'm going to watch Germany play at UEFA EURO 2020, but have never been to Munich before. 
             My criteria for a couple of nights stay were that the place should be reasonably priced,
