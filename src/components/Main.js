@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
 import pic03 from '../images/profile.jpg'
-import pic05 from '../images/munichmap.png'
+import pic04 from '../images/munichmap.png'
 import pic06 from '../images/bestchoices.png'
 import pic07 from '../images/sentimentanalysis.png'
 import pic08 from '../images/binnedcertainty.png'
@@ -129,7 +129,7 @@ class Main extends React.Component {
           <h3>Munich: where to stay?</h3>
           <p>Topics: Data Cleaning, Data Analysis, Cartological Visualisation</p>
           <span className="image main">
-            <img src={pic05} alt="" />
+            <img src={pic04} alt="" />
           </span>
           <p>
             I'm going to watch Germany play at UEFA EURO 2020, but have never been to Munich before. 
