@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import Iframe from 'react-iframe'
 import pic01 from '../images/pic01.jpg'
 import pic03 from '../images/profile.jpg'
 import pic06 from '../images/bestchoices.png'
@@ -32,7 +33,8 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">COVID-19: what do the stats say?</h2>
+          <h2 className="major">COVID-19</h2>
+          <h3 className="major">what do the stats say?</h3>
           <p>
           Nearly everyone is sitting at home these days. Most people I know have a dashboard full of COVID-19 stats bookmarked in their browser - they want to follow the latest developments and inform themselves about the danger of the virus. Of course, they also want to know when things will “get back to normal”.
           </p>
@@ -48,14 +50,14 @@ class Main extends React.Component {
           However, the scale has been set so that a 15% mortality rate is the maximum, over-inflating the visualisation scale and perhaps misinforming those skipped over the scale.  
           <br></br>
           <br></br>
-          <img src="https://ichef.bbci.co.uk/news/624/cpsprodpb/F197/production/_111074816_death_ratio-nc.png" width="400px"></img>
+          <img src="https://ichef.bbci.co.uk/news/624/cpsprodpb/F197/production/_111074816_death_ratio-nc.png" width="50%"></img>
           <br></br>
           <br></br>
           More frequent is confusion due to a lack of explanation. What’s the difference between the below visualisations for example? How does it effect our understanding of the rate of growth?
           <br></br>
           <br></br>
-          <img src="https://specials-images.forbesimg.com/imageserve/5e7901eb10380d0006fbddb8/960x0.jpg?fit=scale" width="360" height="300"></img>
-          <img src="https://specials-images.forbesimg.com/imageserve/5e79023a10380d0006fbddc7/960x0.jpg?fit=scale" width="360" height="300"></img>
+          <img src="https://specials-images.forbesimg.com/imageserve/5e7901eb10380d0006fbddb8/960x0.jpg?fit=scale" width="50%" height="50%"></img>
+          <img src="https://specials-images.forbesimg.com/imageserve/5e79023a10380d0006fbddc7/960x0.jpg?fit=scale" width="50%" height="50%"></img>
           <br></br>
           <br></br>
           Briefly summarised - the infection rate takes an exponential curve, meaning that the more people who get it, the greater the rate they pass it on to others. So 1 person can infect 2, these 2 people can infect 4 total (2 each) and so on. 
@@ -81,10 +83,29 @@ class Main extends React.Component {
           <p>
           Enough talking - enjoy the graphics! If for any reason you need to reach out to me, feel free!
           </p>
-          
+              <p>
+                Visualisations were created with Tabelau, data cleaning undertaken using Python. Check out the code by clicking the below button.
+                <br></br><br></br>
+                <ul className="iconsinline">
+                  <li>
+                    <a href="https://github.com/obains/COVID-19/blob/master/COVID%20Testing.ipynb" className="icon fa-github">
+                      <span className="label">Github</span>
+                    </a>
+                  </li>
+                </ul>
+              </p>
           {close}
         </article>
-
+        <Iframe url="https://public.tableau.com/views/COVID-19_15872949219900/COVID-19?:viz_share_link"
+              id="tableau"
+              width="100%"
+              height="100%"
+              className="tableauclass"
+              display="initial"
+              allowFullScreen="false"
+              scrollin="no"
+            />
+            <p></p>
         <article
           id="about"
           className={`${this.props.article === 'about' ? 'active' : ''} ${
