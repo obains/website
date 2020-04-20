@@ -39,6 +39,14 @@ const Header = props => (
             Contact
           </button>
         </li>
+        <li>
+          <button
+            onClick={() => {
+              props.onOpenArticle('covid')
+            }}>
+            COVID-19
+          </button>
+        </li>
       </ul>
     </nav>
   </header>
