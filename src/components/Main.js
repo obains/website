@@ -66,7 +66,7 @@ class Main extends React.Component {
           <p>
           When I started out this project, I wanted to dive into a more micro level and provide at least a breakdown of cases per <i>Bundesland</i> in Germany, at most per <i>Bezirk</i>. 
           But this proved to not be so easy. Why?
-          To all conspiracy theorists out there - the data is published by the authorities, this is not a made up crisis by “big government”. However, in many areas, the data is released only per day. Take the numbers from my home city Berlin, for example (find them by clicking <a href="https://www.berlin.de/lageso/gesundheit/infektionsepidemiologie-infektionsschutz/corona/tabelle-bezirke/"> here</a>). 
+          To all conspiracy theorists out there - the data is published by the authorities, this is not a made up crisis by “big government”. However, in many areas, the data is released only per day. Take the numbers from my home city Berlin, for example (find them by clicking <a href="https://www.berlin.de/lageso/gesundheit/infektionsepidemiologie-infektionsschutz/corona/tabelle-bezirke/"> <b style={{ color: 'lightblue' }}>here</b></a>). 
           We receive data on a level of granularity of the Bezirk, informing us about the reported infections, rate of change in the number of reported infections, and how many people have been deemed to have “recovered completely” from the virus. 
           Yet the problem is, the Berlin government releases these numbers once a day, overwriting the figures from the previous day. 
           A simple web scraper could grab this data automatically; that is not the issue. 
@@ -78,10 +78,12 @@ class Main extends React.Component {
           </p>
           <p>
           In the end, I decided to omit this data from my visualisation, instead favouring an accurate representation without missing data. Historical data on the crisis should be open for those who want to view it, for those who want to build dashboards from it, and of course for those who want to help test modelling of the crisis so that we can understand more about what the future holds for us. 
-          A shoutout to <a href="https://ourworldindata.org/"> OWID</a> who have published all their research and data, so that others may freely use it for projects such as these (without having to set up a web scrape from day one). 
+          A shoutout to <a href="https://ourworldindata.org/"> <b style={{ color: 'lightblue' }}>OWID</b></a> who have published all their research and data, so that others may freely use it for projects such as these (without having to set up a web scrape from day one). 
           </p>
           <p>
           Enough talking - enjoy the graphics! If for any reason you need to reach out to me, feel free!
+          <br></br>The dashboard consists of six sheets (use the pages at the top to navigate) and the graphics are interactive so feel free to click around on them to find out more information.
+          <br></br>Should the aspect ratio not fit your screen, feel free to check the dashboard natively by clicking <a href="https://public.tableau.com/views/COVID-19whatdothestatssaynew/COVID-19?:display_count=y&:origin=viz_share_link"> <b style={{ color: 'lightblue' }}>here</b></a>.
           </p>
               <p>
                 Visualisations were created with Tabelau, data cleaning undertaken using Python. Check out the code by clicking the below button.
@@ -95,17 +97,17 @@ class Main extends React.Component {
                 </ul>
               </p>
           {close}
+          <Iframe url="https://public.tableau.com/views/COVID-19_15872949219900/COVID-19?:display_count=y&publish=yes&:toolbar=n&:origin=viz_share_link"
+                id="tableau"
+                width="100%"
+                height="800px"
+                className="tableauclass"
+                display="initial"
+                allowFullScreen="true"
+              />
         </article>
-        <Iframe url="https://public.tableau.com/views/COVID-19_15872949219900/COVID-19?:viz_share_link"
-              id="tableau"
-              width="100%"
-              height="100%"
-              className="tableauclass"
-              display="initial"
-              allowFullScreen="false"
-              scrollin="no"
-            />
-            <p></p>
+          
+            
         <article
           id="about"
           className={`${this.props.article === 'about' ? 'active' : ''} ${
@@ -186,7 +188,7 @@ class Main extends React.Component {
             Rather than manually search through all of Airbnb and suffer through the mountain of data, I used Python to do my own data-driven analysis.
           </p>
           <p>
-            Click <a href="https://obains.github.io/bookableairbnbs.html">here</a> and <a href="https://obains.github.io/bestchoices">here</a> to view my interactive maps (hover, scroll, and zoom for more information). 
+            Click <a href="https://obains.github.io/bookableairbnbs.html"><b style={{ color: 'lightblue' }}>here</b></a> and <a href="https://obains.github.io/bestchoices"><b style={{ color: 'lightblue' }}>here</b></a> to view my interactive maps (hover, scroll, and zoom for more information). 
           Check out the code by clicking the below button:
           <br></br><br></br>
           <ul className="iconsinline">
@@ -216,7 +218,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <p>You can get in contact with me either through <a href="mailto:oliverbains&#64;gmx&#x2E;de?Subject=Website%20request"> email </a>
+          <p>You can get in contact with me either through <a href="mailto:oliverbains&#64;gmx&#x2E;de?Subject=Website%20request"> <b style={{ color: 'lightblue' }}> email </b> </a>
           or through the below icons.
           </p>
           <ul className="icons">
