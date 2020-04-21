@@ -122,7 +122,7 @@ class Main extends React.Component {
           </span>
           <h2 className="minor">About</h2>
             <p>
-            Highly skilled in data analysis, I keep a focus on continuous self-education with a particular interest in automation, data-analysis, and sustainability.
+            My focus is on continuous self-education with a particular interest in automation, data-analysis, and sustainability.
             <br></br>
             <br></br>
             I use Python to solve problems at work, to provide and track metrics, and to create custom intergrations between systems in order to better link data.
