@@ -19,6 +19,14 @@ class Main extends React.Component {
           this.props.onCloseArticle()
         }}
       ></div>
+    ) 
+    let open = (
+      <div
+        className="open"
+        onClick={() => {
+          this.props.onOpenArticle()
+        }}
+      ></div>
     )
 
     return (
@@ -88,6 +96,7 @@ class Main extends React.Component {
           </p>
               <p>
                 Visualisations were created with Tabelau, data cleaning undertaken using Python. Check out the code by clicking the below button.
+                <br></br>This dashboard should update daily. 
                 <br></br><br></br>
                 <ul className="iconsinline">
                   <li>
@@ -159,9 +168,9 @@ class Main extends React.Component {
             In the end, this turned into a much larger project, with a self-updating dashboard for real-time tracking. 
           <br></br>
           <br></br>
-          I felt it warranted therefore it's own page.
+          I felt it warranted therefore it's own space.
           Find it under the home page.</p>
-          
+
           <h3>How do I not kill my plants?</h3>
           <p>Topics: Python, Automated Gardening, Hardware, Raspberry Pi</p>
           <span className="image main">
@@ -177,6 +186,7 @@ class Main extends React.Component {
           </p>
           <p>This is a work in progress, which will be developed and updated over time.</p>
           <h3>Sentiment Analysis: Liverpool Football Club and Adriàn</h3>
+          
           <p>Topics: Machine Learning, Naive Bayes, Web Scraping, Data Cleaning, Data Analysis, Graphical Visualisation</p>
           <span className="image main">
             <img src={pic07} alt="" />
@@ -240,7 +250,7 @@ class Main extends React.Component {
           <br></br><br></br>
           <h3>This website</h3>
           <p>
-            This website was created using Gatsby.JS.
+            This website was created using GatsbyJS.
           </p>
           {close}
         </article>
