@@ -7,6 +7,7 @@ import pic06 from '../images/bestchoices.png'
 import pic07 from '../images/sentimentanalysis.png'
 import pic08 from '../images/binnedcertainty.png'
 import pic09 from '../images/munichmap.png'
+import pic10 from '../images/Pi.jpeg'
 
 
 class Main extends React.Component {
@@ -124,7 +125,7 @@ class Main extends React.Component {
             Highly skilled in data analysis, I keep a focus on continuous self-education with a particular interest in automation, data-analysis, and sustainability.
             <br></br>
             <br></br>
-            I use Python and R to solve problems at work, to provide and track metrics, and to create custom intergrations between systems in order to better link data.
+            I use Python to solve problems at work, to provide and track metrics, and to create custom intergrations between systems in order to better link data.
             <br></br>
             <br></br>
             At home, I continue my journey to learn by using data driven approaches to solve (sometimes silly) questions or issues.
@@ -140,7 +141,28 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Projects</h2>
-
+          <h3>COVID-19: what do the stats say?</h3>
+          <p>I started off this project with the aim to do a quick write up and present some of the graphics I found useful for helping track the spread of COVID-19.
+            In the end, this turned into a much larger project, with a self-updating dashboard for real-time tracking. 
+          <br></br>
+          <br></br>
+          I felt it warranted therefore it's own page.
+          Find it under the home page.</p>
+          
+          <h3>How do I not kill my plants?</h3>
+          <p>Topics: Python, Automated Gardening, Hardware, Raspberry Pi</p>
+          <span className="image main">
+            <img src={pic10} alt="" />
+          </span>
+          <p>
+            I am bad at gardening. Some would say very bad. 
+            So instead of reading a book on how to come better, I decided to try program myself a solution instead.
+          </p>
+          <p>I am currently working on a hardware ecosystem, built upon the Raspberry Pi and using Python, which will automatically notify me when I need to take action.
+            Data on light levels (luminosity), temperature, humidity and soil moisture help me decide what is best for my plants, adapting their environment based upon a truly data-driven approach. 
+            In the future I will be expanding the scope of this project to include automatic water and light regulation. 
+          </p>
+          <p>This is a work in progress, which will be developed and updated over time.</p>
           <h3>Sentiment Analysis: Liverpool Football Club and Adriàn</h3>
           <p>Topics: Machine Learning, Naive Bayes, Web Scraping, Data Cleaning, Data Analysis, Graphical Visualisation</p>
           <span className="image main">
@@ -248,6 +270,7 @@ Main.propTypes = {
   article: PropTypes.string,
   articleTimeout: PropTypes.bool,
   onCloseArticle: PropTypes.func,
+  onOpenArticle: PropTypes.func,
   timeout: PropTypes.bool,
   setWrapperRef: PropTypes.func.isRequired,
 }
