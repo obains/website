@@ -130,6 +130,19 @@ class Main extends React.Component {
             <br></br>
             At home, I continue my journey to learn by using data driven approaches to solve (sometimes silly) questions or issues.
             </p>
+            <p>
+              Most of my work is done in:
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Tableau</li>
+
+            </p>
+            <p>
+              On occasion I like to use:
+              <li>R</li>
+              <li>Excel</li>
+              <li>ReactJS</li>
+            </p>
           {close}
         </article>
 
