@@ -44,6 +44,7 @@ class Main extends React.Component {
         >
           <h2 className="major">COVID-19</h2>
           <h3 className="major">what do the stats say?</h3>
+          <p><b>Please note: this project is not being maintained any more.</b></p>
           <p>
           Nearly everyone is sitting at home these days. Most people I know have a dashboard full of COVID-19 stats bookmarked in their browser - they want to follow the latest developments and inform themselves about the danger of the virus. Of course, they also want to know when things will “get back to normal”.
           </p>
