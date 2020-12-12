@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import Iframe from 'react-iframe'
-import pic01 from '../images/pic01.jpg'
 import pic03 from '../images/profile.jpg'
 import pic06 from '../images/bestchoices.png'
 import pic07 from '../images/sentimentanalysis.png'
 import pic08 from '../images/binnedcertainty.png'
 import pic09 from '../images/munichmap.png'
 import pic10 from '../images/Pi.jpeg'
+import pic11 from '../images/flora-website-large.png'
 
 
 class Main extends React.Component {
@@ -42,8 +42,8 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">COVID-19</h2>
-          <h3 className="major">what do the stats say?</h3>
+          <h2 className="majorTitle">COVID-19</h2>
+          <h3>what do the stats say?</h3>
           <p><b>Please note: this project is not being maintained any more.</b></p>
           <p>
           Nearly everyone is sitting at home these days. Most people I know have a dashboard full of COVID-19 stats bookmarked in their browser - they want to follow the latest developments and inform themselves about the danger of the virus. Of course, they also want to know when things will “get back to normal”.
@@ -143,6 +143,7 @@ class Main extends React.Component {
             <p>
               Most of my work is done in:
               <li>Python</li>
+              <li>Flask</li>
               <li>SQL</li>
               <li>Tableau</li>
 
@@ -151,26 +152,19 @@ class Main extends React.Component {
               On occasion I like to use:
               <li>R</li>
               <li>Excel</li>
-              <li>ReactJS</li>
+              <li>Javascript & ReactJS</li>
             </p>
           {close}
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          id="rpi-greenhouse"
+          className={`${this.props.article === 'rpi-greenhouse' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Projects</h2>
-          <h3>COVID-19: what do the stats say?</h3>
-          <p>I started off this project with the aim to do a quick write up and present some of the graphics I found useful for helping track the spread of COVID-19.
-            In the end, this turned into a much larger project, with a self-updating dashboard for real-time tracking. 
-          <br></br>
-          <br></br>
-          I felt it warranted therefore it's own space.
-          Find it under the home page.</p>
+          <h2 className="majorTitle">Automated Raspberry-Pi Plant Monitoring</h2>
 
           <h3>How do I not kill my plants?</h3>
           <p>Topics: Python, Automated Gardening, Hardware, Raspberry Pi</p>
@@ -185,8 +179,26 @@ class Main extends React.Component {
             Data on light levels (luminosity), temperature, humidity and soil moisture help me decide what is best for my plants, adapting their environment based upon a truly data-driven approach. 
             In the future I will be expanding the scope of this project to include automatic water and light regulation. 
           </p>
+          <p>
+            This was my first experience working extensively with hardware, in particular with breadboards and resistors. Additionally, this project was (and is) a good opportunity 
+            for me to take on the challenge of setting up a system which has to run 24/7 and allowed to me to dive deeper into the operating system of a Pi. 
+          </p>
+          <p>
+            Unfortunately, a working system still couldn't save me from killing my plants. 
+            <br/>Back to the drawing board, I guess.
+          </p>
           <p>This is a work in progress, which will be developed and updated over time.</p>
-          <h3>Sentiment Analysis: Liverpool Football Club and Adriàn</h3>
+          {close}
+        </article>
+
+        <article
+          id="sentiment-analysis"
+          className={`${this.props.article === 'sentiment-analysis' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="majorTitle">Sentiment Analysis: Liverpool Football Club and Adriàn</h2>
           
           <p>Topics: Machine Learning, Naive Bayes, Web Scraping, Data Cleaning, Data Analysis, Graphical Visualisation</p>
           <span className="image main">
@@ -212,7 +224,7 @@ class Main extends React.Component {
             <img src={pic08} alt="" />
           </span>
           <p> 
-          Check out the full code and analysis by clicking the below button:
+          Check out the full code and analysis by clicking the button or checking out the embedded notebook below:
           <br></br><br></br>
           <ul className="iconsinline">
             <li>
@@ -221,8 +233,20 @@ class Main extends React.Component {
               </a>
             </li>
           </ul>
+          <iframe width="100%" height="800px" src="https://nbviewer.jupyter.org/github/obains/sentiment-analysis-adrian/blob/master/sentiment-analysis/sentiment_analysis_adrian.ipynb"></iframe>
           </p>
-          <h3>Munich: where to stay?</h3>
+          </article>
+
+          <article
+          id="munich"
+          className={`${this.props.article === 'munich' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+          >
+
+          <h2 className="majorTitle">Munich: where to stay?</h2>
+
           <p>Topics: Data Cleaning, Data Analysis, Cartological Visualisation</p>
             <span className="image main">
               <img src={pic09} alt="" />
@@ -248,8 +272,30 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic06} alt="" />
           </span>
-          <br></br><br></br>
-          <h3>This website</h3>
+        </article>
+        <article
+          id="other"
+          className={`${this.props.article === 'other' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+          >
+          <h2 className="majorTitle">Other projects</h2>
+          <p>
+            A list of other projects I have taken on. 
+          </p>
+
+          <h3 className="majorTitle">Freelance: website creation</h3>
+          <p>
+            I have created a portfolio for a freelance project, which can be found by clicking the picture below: 
+            <span className="image main">
+              <a href="https://www.floraloughridge.com/" target="_blank">
+                <img src={pic11} alt="" />
+              </a>
+            </span>          
+          </p>
+
+          <h3 className="majorTitle">This website</h3>
           <p>
             This website was created using GatsbyJS.
           </p>
